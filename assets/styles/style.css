@@ -1,0 +1,74 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-title {
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: #e9ecef;
+    border-color:#353839;
+    color: black;
+}
+
+
+/* GRID */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    justify-content: center;
+}
+
+#podunkImg {
+    grid-column-start: 1;
+    grid-column-end: span col6-start;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    color: #e9ecef;
+    background-color: #0e1111;
+}
+
+#podunkBody {
+    grid-column-start: 7;
+    grid-column-end: span col12-start;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    color: #e9ecef;
+    background-color: #0e1111;
+}
+
+#uimnImg {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    background-color: #353839;
+    color: #e9ecef;
+}
+
+#uimnBody {
+    grid-column-start: 1;
+    grid-column-end: span col6-start;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: #353839;
+    color: #e9ecef;
+}
+
+#radiokImg {
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: gray;
+}
+
+#radiokBody {
+    grid-column-start: 7;
+    grid-column-end: span col12-start;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: gray;
+}
