@@ -1,19 +1,61 @@
-img {
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #151F1Dff;
+    color: #E1E5BFff;
+}
+
+.navbar {
+    background-color: #BADB95ff !important;
+}
+
+.nav-link {
+    color: black !important;
+}
+    img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 7px;
+    border-color: #03EA33 !important;
+    border-width: 5px;
+    border-style: solid;
 }
 
 .card-title {
     text-transform: uppercase;
+    font-size: 36px;
 }
 
 .btn-primary {
-    background-color: #e9ecef;
+    background-color: #344A2Fff;;
     border-color:#353839;
-    color: black;
+    color: #BADB95ff;
 }
 
+.jumbotron {
+    background-color: #151F1Dff;
+    color: #E1E5BFff;
+    ;
+}
 
+.modal-content {
+    background-color: #233831ff !important;
+}
+
+button:hover {
+    background-color: #03EA33 !important;
+    color: #171A15ff !important;
+}
+
+.btn:hover {
+    background-color: #03EA33 !important;
+    color: #171A15ff !important;
+    font-weight: 900;
+}
+
+.display-4 {
+    text-decoration: underline;
+    text-decoration-color: #03EA33;
+}
 /* GRID */
 .gridContainer {
     display: grid;
@@ -23,12 +65,12 @@ img {
 }
 
 #podunkImg {
+    padding-left: 25%;
     grid-column-start: 1;
     grid-column-end: span col6-start;
     grid-row-start: 1;
     grid-row-end: span 1;
-    color: #e9ecef;
-    background-color: #0e1111;
+    background-color: #171A15ff;
 }
 
 #podunkBody {
@@ -36,16 +78,14 @@ img {
     grid-column-end: span col12-start;
     grid-row-start: 1;
     grid-row-end: 1;
-    color: #e9ecef;
-    background-color: #0e1111;
+    background-color: #171A15ff;
 }
 
 #uimnImg {
     grid-column-start: 7;
     grid-column-end: 12;
     grid-row-start: 2;
-    background-color: #353839;
-    color: #e9ecef;
+    background-color: #151F1Dff;
 }
 
 #uimnBody {
@@ -53,8 +93,7 @@ img {
     grid-column-end: span col6-start;
     grid-row-start: 2;
     grid-row-end: 2;
-    background-color: #353839;
-    color: #e9ecef;
+    background-color: #151F1Dff;
 }
 
 #radiokImg {
@@ -62,7 +101,8 @@ img {
     grid-column-end: span 6;
     grid-row-start: 3;
     grid-row-end: 3;
-    background-color: gray;
+    background-color: #171A15ff;
+    padding-left: 25%;
 }
 
 #radiokBody {
@@ -70,5 +110,11 @@ img {
     grid-column-end: span col12-start;
     grid-row-start: 3;
     grid-row-end: 3;
-    background-color: gray;
+    background-color: #171A15ff;
+}
+
+
+.caseContainer {
+    padding: 3%;
+
 }

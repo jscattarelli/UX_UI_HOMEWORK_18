@@ -4,17 +4,24 @@
       <head>
         <title>Justine Scattarelli portfolio</title>
         <!-- Bootstrap CSS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/styles/style.css">
-        </head>
-        <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Justine Scattarelli</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+       </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--<a class="navbar-brand" href="#">Justine Scattarelli</a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+    </button>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Work <span class="sr-only">(current)</span></a>
@@ -27,37 +34,65 @@
                   </li>
             </div>
           </nav>
-          <div class="jumbotron">
-            <h1 class="display-4">Justine Scattarelli</h1>
-            <p class="lead">I’m a design-minded product manager and user researcher specializing in educational technology. </p>
-            <hr class="my-4">
-            <p>Cultivating more effective, equitable, & accessible education systems.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="jumbotron">
+      <h1 class="display-4">Justine Scattarelli</h1>
+        <p class="lead">I’m a design-minded product manager and user researcher specializing in educational technology. </p>
+          <hr class="my-4">
+           <p>Cultivating more effective, equitable, & accessible education systems.</p>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact Me</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
           <div class="gridContainer">
-            <div id="podunkImg">
+            <div class="caseContainer" id="podunkImg">
               <img src="./assets/images/Android - splash.png" alt="Water tower illustration with loading icon on yellow background">
             </div>
-            <div id="podunkBody">
+            <div class="caseContainer" id="podunkBody">
               <h5 class="card-title">Podunk</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Learn more</a>
+              <a href="#" class="btn btn-primary">Check it out</a>
             </div>
-            <div id="uimnBody">
+            <div class="caseContainer" id="uimnBody">
               <h5 class="card-title">UIMN</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Learn more</a>
+              <a href="#" class="btn btn-primary">Check it out</a>
             </div>
-            <div id="uimnImg">
+            <div class="caseContainer" id="uimnImg">
               <img src="./assets/images/MacBook Pro - 43.png" alt="...">
             </div>
-            <div id="radiokImg">
+            <div class="caseContainer" id="radiokImg">
               <img src="./assets/images/Streaming home page Ways to Give Hover.png" alt="...">
             </div>
-            <div id="radiokBody">
+            <div class="caseContainer" id="radiokBody">
               <h5 class="card-title">Radio K</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Learn more</a>
+              <a href="#" class="btn btn-primary">Check it out</a>
             </div>
 
           </div>
