@@ -4,8 +4,14 @@ body {
     color: #E1E5BFff;
 }
 
+p {
+    overflow:hidden; 
+    word-wrap:break-word;
+}
+
 .navbar {
     background-color: #BADB95ff !important;
+    margin-left: auto;
 }
 
 .nav-link {
@@ -56,26 +62,31 @@ button:hover {
     text-decoration: underline;
     text-decoration-color: #03EA33;
 }
+
+.caseContainer {
+    padding: 5%;
+    max-width: 100%;
+    align-items: center;
+}
 /* GRID */
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 300px);
-    justify-content: center;
 }
 
 #podunkImg {
     padding-left: 25%;
     grid-column-start: 1;
-    grid-column-end: span col6-start;
+    grid-column-end: span 6;
     grid-row-start: 1;
-    grid-row-end: span 1;
+    grid-row-end: 1;
     background-color: #171A15ff;
 }
 
 #podunkBody {
     grid-column-start: 7;
-    grid-column-end: span col12-start;
+    grid-column-end: span 12;
     grid-row-start: 1;
     grid-row-end: 1;
     background-color: #171A15ff;
@@ -90,7 +101,7 @@ button:hover {
 
 #uimnBody {
     grid-column-start: 1;
-    grid-column-end: span col6-start;
+    grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 2;
     background-color: #151F1Dff;
@@ -107,14 +118,10 @@ button:hover {
 
 #radiokBody {
     grid-column-start: 7;
-    grid-column-end: span col12-start;
+    grid-column-end: span 12;
     grid-row-start: 3;
     grid-row-end: 3;
     background-color: #171A15ff;
 }
 
 
-.caseContainer {
-    padding: 3%;
-
-}
